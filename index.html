@@ -1,131 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ryan Rosenthal — legal, investigative, and public service professional portfolio.">
-  <title>Ryan Rosenthal | Legal & Investigative Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ryan Rosenthal - legal research, investigations, public service, and selected writing.">
+  <meta name="theme-color" content="#24162f">
+  <title>Ryan Rosenthal | Legal Research & Public Service</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#top">RR</a>
-    <nav>
-      <a href="#about">About</a>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="monogram" href="#top" aria-label="Ryan Rosenthal home"><span>§</span> RR</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#profile">Profile</a>
+      <a href="#work">Work</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#interests">Interests</a>
+      <a href="#off-record">Off the Record</a>
+      <a class="nav-resume" href="Ryan_Rosenthal_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">LEGAL • INVESTIGATIONS • PUBLIC SERVICE</p>
-      <h1>Ryan Rosenthal</h1>
-      <p class="lead">Jurisprudence and Political Science graduate with hands-on experience in government investigations, legal research, regulatory analysis, and case file management.</p>
-      <div class="actions">
-        <a class="button primary" href="Ryan_Rosenthal_Resume.pdf" target="_blank">View Résumé</a>
-        <a class="button secondary" href="#contact">Contact Me</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-kicker">Legal research · investigations · public service</div>
+      <h1 id="hero-title">Ryan<br><em>Rosenthal</em></h1>
+      <div class="hero-grid">
+        <p class="hero-statement">I’m interested in the part of law where research becomes practical: finding the facts, understanding how rules affect real people, and turning complicated information into something clear and useful.</p>
+        <div class="hero-side">
+          <p>My background combines legal studies, political science, government investigative work, and public-facing experience. I’m building toward a career as an attorney while continuing to explore the areas of practice where careful research and strong client service matter most.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <a class="button button-ghost" href="Ryan_Rosenthal_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
+          </div>
+        </div>
       </div>
-      <div class="quick">
+      <div class="hero-meta" aria-label="Quick facts">
         <span>Dumont, New Jersey</span>
-        <span>Montclair State University</span>
+        <span>Montclair State University · Class of 2026</span>
         <span>Open to legal & investigative opportunities</span>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <p class="section-label">01 / ABOUT</p>
-      <div class="two-col">
-        <h2>Building a career at the intersection of law, investigation, and public service.</h2>
-        <p>I am a dual-degree graduate of Montclair State University pursuing a career as an attorney. My experience with the New Jersey Office of the Attorney General, Division of Consumer Affairs gave me direct exposure to consumer protection investigations, document review, regulatory research, investigative writing, and confidential case management. I am seeking opportunities to continue developing practical legal and litigation experience while contributing strong research, organization, and communication skills.</p>
+    <section class="section profile" id="profile">
+      <div class="section-number">01 / PROFILE</div>
+      <div class="section-grid">
+        <div>
+          <h2>A legal career built on curiosity, precision, and people.</h2>
+        </div>
+        <div class="prose">
+          <p>I came to law through a mix of interests: how institutions make decisions, how those decisions affect families and communities, and how the facts of a case can change the way a rule operates in real life.</p>
+          <p>Family law and child welfare are areas I have studied deeply, but I do not see my career as limited to one practice area. I am equally interested in learning the day-to-day craft of legal practice, from research and drafting to client communication, litigation support, trusts and estates, and investigative work.</p>
+          <p>My experience with the New Jersey Office of the Attorney General reinforced what I enjoy most: reading closely, organizing complicated records, asking the next question, and helping turn information into something that can move a matter forward.</p>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <p class="section-label">02 / EXPERIENCE</p>
-      <h2>Selected Experience</h2>
-      <article class="role featured">
-        <div class="role-head">
-          <div>
-            <h3>Intern Investigator</h3>
-            <p>Office of the Attorney General, Division of Consumer Affairs</p>
+    <section class="section work" id="work">
+      <div class="section-number">02 / SELECTED WORK</div>
+      <div class="work-intro">
+        <h2>Research I’m proud to put my name on.</h2>
+        <p>A small, intentional collection of legal, policy, and political research. The first two pieces are the work I feel best represents me.</p>
+      </div>
+
+      <article class="feature feature-one">
+        <div class="feature-index">01</div>
+        <div class="feature-copy">
+          <div class="eyebrow">Featured research · Independent legal research · 2025</div>
+          <h3>Best Interests or State Interests?</h3>
+          <p class="subtitle">Law and Psychology in New Jersey Termination of Parental Rights</p>
+          <p class="feature-description">A multidisciplinary examination of New Jersey’s termination-of-parental-rights framework and the “best interests of the child” standard. The paper asks whether permanency timelines and administrative interests can overshadow children’s developmental needs, using New Jersey case law alongside research in attachment theory, foster-care instability, and childhood trauma.</p>
+          <div class="tags" aria-label="Topics"><span>Family Law</span><span>Child Welfare</span><span>Constitutional Rights</span><span>Developmental Psychology</span></div>
+          <aside class="why">
+            <strong>Why I chose this piece</strong>
+            <p>This was my final major jurisprudence research project and the work that most clearly reflects my interest in family law, child welfare, and the human consequences of legal decision-making.</p>
+          </aside>
+          <div class="actions">
+            <a class="button button-primary" href="Best_Interests_or_State_Interests.pdf" target="_blank" rel="noopener">Read the paper</a>
           </div>
-          <div class="meta">Newark, NJ<br>Sept 2025 – Dec 2025</div>
         </div>
-        <ul>
-          <li>Drafted preliminary investigative summaries for active consumer protection matters.</li>
-          <li>Analyzed contracts, service agreements, and business records to identify relevant facts for investigations.</li>
-          <li>Conducted legal and regulatory research involving potential state law violations, with a primary focus on the New Jersey Consumer Fraud Act.</li>
-          <li>Used Microsoft Excel to organize and track case data across active enforcement matters.</li>
-          <li>Supported complaint intake and maintained confidential case files.</li>
-        </ul>
       </article>
 
-      <article class="role">
-        <div class="role-head">
-          <div>
-            <h3>Inbound, Receiving, Consumables & General Merchandise Expert</h3>
-            <p>Target, Store 1822</p>
+      <article class="feature feature-two">
+        <div class="feature-index">02</div>
+        <div class="feature-copy">
+          <div class="eyebrow">Published & collaborative · Montclair State University Digital Commons · 2024</div>
+          <h3>Addressing Youth Cannabis Poisonings in Paterson, NJ</h3>
+          <p class="subtitle">Contributing Author · Chapter 2: Age Requirements for Cannabis Products Sales</p>
+          <p class="feature-description">A public-policy white paper developed with classmates for POLS 324. My contribution focused on age requirements and policy responses to youth access to cannabis products, including enforcement, retail access, education, and the evaluation of proposed interventions.</p>
+          <div class="tags" aria-label="Topics"><span>Public Policy</span><span>New Jersey</span><span>Regulation</span><span>Community Safety</span></div>
+          <aside class="why">
+            <strong>Why I chose this piece</strong>
+            <p>I like that this work moved beyond a normal class paper. It was collaborative, policy-focused, and ultimately published through Montclair State University’s Digital Commons.</p>
+          </aside>
+          <div class="actions">
+            <a class="button button-primary" href="https://digitalcommons.montclair.edu/polysci-law-facpubs/54" target="_blank" rel="noopener">Official publication</a>
+            <a class="button button-ghost" href="Addressing_Youth_Cannabis_Poisonings_Paterson_NJ.pdf" target="_blank" rel="noopener">PDF copy</a>
           </div>
-          <div class="meta">Clifton, NJ<br>Oct 2020 – Aug 2026</div>
         </div>
-        <p>Coordinated high-volume operational workflows, maintained inventory accuracy and policy compliance, and applied communication and conflict-resolution skills in daily customer and team interactions.</p>
+      </article>
+
+      <div class="supporting-work">
+        <article class="work-card">
+          <div class="work-card-top"><span>03 / Comparative law & politics</span><span>2024</span></div>
+          <h3>Restoring Justice: Poland’s Path to Reclaiming Judicial Independence and Democratic Integrity</h3>
+          <p>Research on judicial independence, democratic backsliding, EU legal institutions, and the relationship between courts and political power.</p>
+          <a href="Restoring_Justice_Poland.pdf" target="_blank" rel="noopener">Read selected research <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="work-card">
+          <div class="work-card-top"><span>04 / Field research</span><span>2025</span></div>
+          <h3>Study on Ten Participants in Clifton, NJ</h3>
+          <p>Original interviews and survey research on New Jersey public opinion, trust in state government, education, public safety, immigration, and political leadership.</p>
+          <a href="Clifton_NJ_Field_Research.pdf" target="_blank" rel="noopener">Read field research <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <details class="additional-writing">
+        <summary>Additional writing</summary>
+        <div class="additional-inner">
+          <div><strong>Digital Assets</strong><p>A focused policy analysis of federal digital-asset regulation, consumer protection, enforcement, innovation, and regulatory tradeoffs.</p></div>
+          <a class="text-link" href="Digital_Assets_Policy_Analysis.pdf" target="_blank" rel="noopener">Read PDF ↗</a>
+        </div>
+      </details>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-number">03 / EXPERIENCE</div>
+      <div class="experience-heading">
+        <h2>From records to facts to next steps.</h2>
+        <p>My most relevant experience has taught me how much good legal and investigative work depends on organization, judgment, and close attention to details that may not look important at first.</p>
+      </div>
+
+      <article class="timeline-item major">
+        <div class="timeline-meta"><span>2025</span><span>Newark, NJ</span></div>
+        <div class="timeline-content">
+          <div class="role-label">New Jersey Office of the Attorney General · Division of Consumer Affairs</div>
+          <h3>Intern Investigator</h3>
+          <p>I supported consumer-protection investigations through document review, legal and regulatory research, investigative writing, complaint intake, and case-file management. I worked with contracts, service agreements, business records, and case data, learning how facts are organized and developed within an active government enforcement environment.</p>
+          <div class="lesson"><span>What stayed with me</span><p>The importance of being able to explain why a fact matters, not simply finding it.</p></div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-meta"><span>2020–2026</span><span>Clifton, NJ</span></div>
+        <div class="timeline-content">
+          <div class="role-label">Target · Store 1822</div>
+          <h3>Inbound, Receiving, Consumables & General Merchandise Expert</h3>
+          <p>Long-term retail and operations experience gave me a practical foundation in teamwork, accountability, inventory accuracy, conflict resolution, and communicating with people who may be frustrated, rushed, or simply need a clear answer.</p>
+        </div>
       </article>
     </section>
 
-    <section id="education" class="section">
-      <p class="section-label">03 / EDUCATION & LEADERSHIP</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Montclair State University</h3>
-          <p class="muted">May 2026</p>
-          <p><strong>B.A., Jurisprudence, Law and Society</strong><br>
-          <strong>B.A., Political Science</strong><br>
-          Minor in Public Administration</p>
-          <p>GPA: 3.876 / 4.00<br>Dean's List • Presidential Honors Scholarship</p>
+    <section class="section education" id="education">
+      <div class="section-number">04 / EDUCATION & RECOGNITION</div>
+      <div class="education-lead">
+        <h2>Two disciplines, one legal foundation.</h2>
+        <p>My undergraduate work was intentionally split between the study of law and the study of political institutions, with public administration adding a practical government perspective.</p>
+      </div>
+      <div class="degree-grid">
+        <article class="degree-card">
+          <span class="degree-type">Bachelor of Arts</span>
+          <h3>Jurisprudence, Law & Society</h3>
+          <p>Legal institutions, legal reasoning, law and society, research, and the relationship between doctrine and real-world outcomes.</p>
         </article>
-        <article class="card">
-          <h3>Leadership</h3>
-          <p><strong>Phi Delta Theta Fraternity</strong><br>Historian & Secretary</p>
-          <p>Maintained chapter records and meeting documentation, supported community service and philanthropy events, and contributed to fundraising initiatives benefiting ALS research.</p>
+        <article class="degree-card">
+          <span class="degree-type">Bachelor of Arts</span>
+          <h3>Political Science</h3>
+          <p>Government, public policy, political institutions, comparative politics, international relations, and empirical research.</p>
         </article>
-        <article class="card">
-          <h3>Pre-Law</h3>
-          <p><strong>Pre-Law Club</strong><br>Member</p>
-          <p>Practiced issue spotting, argument development, and oral presentation through mock-client hypotheticals and participated in legal career programming.</p>
+        <article class="degree-card minor">
+          <span class="degree-type">Minor</span>
+          <h3>Public Administration</h3>
+          <p>A supporting focus on how public institutions operate, manage responsibilities, and deliver services.</p>
         </article>
+      </div>
+      <div class="recognition-strip">
+        <div><strong>3.876</strong><span>GPA / 4.00</span></div>
+        <div><strong>Dean’s List</strong><span>Fall 2022 – May 2026</span></div>
+        <div><strong>Presidential Honors</strong><span>Scholarship</span></div>
+        <div><strong>Phi Delta Theta</strong><span>Historian · Secretary</span></div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <p class="section-label">04 / SKILLS</p>
-      <h2>Core Skills</h2>
-      <div class="tags">
-        <span>Legal Research</span><span>Investigative Research</span><span>Document Review</span>
-        <span>Regulatory Analysis</span><span>Investigative Writing</span><span>Case File Management</span>
-        <span>Fact Investigation</span><span>Complaint Intake</span><span>NJ Consumer Fraud Act</span>
-        <span>Microsoft Excel</span><span>Microsoft Office</span><span>Google Workspace</span>
+    <section class="section interests" id="interests">
+      <div class="section-number">05 / AREAS OF INTEREST</div>
+      <div class="interest-intro">
+        <h2>Areas I’m interested in exploring in practice.</h2>
+        <p>These are interests, not claimed specialties. I’m at the stage where I want to learn how different practices work and where my strengths can be most useful.</p>
       </div>
-      <p class="certs"><strong>Certifications:</strong> Microsoft Excel Specialist • First Aid/CPR &nbsp;&nbsp; <strong>Languages:</strong> English • Spanish (Intermediate)</p>
+      <div class="interest-list">
+        <article><span>01</span><div><h3>Family Law & Child Advocacy</h3><p>Particularly parental rights, child welfare, and the way courts balance legal standards with consequences for families.</p></div></article>
+        <article><span>02</span><div><h3>Trusts & Estates</h3><p>Interested in estate planning, probate, client counseling, and helping families navigate important decisions with clarity.</p></div></article>
+        <article><span>03</span><div><h3>Litigation & Legal Practice</h3><p>Case development, legal research, drafting, discovery, client communication, and the practical work behind a strong legal matter.</p></div></article>
+        <article><span>04</span><div><h3>Investigations & Regulatory Law</h3><p>Building on government experience with consumer protection, records, regulatory research, fact development, and enforcement matters.</p></div></article>
+        <article><span>05</span><div><h3>Public Service</h3><p>Work where legal skills intersect with government, community needs, and institutions that directly affect people’s lives.</p></div></article>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <p class="section-label">05 / CONTACT</p>
-      <h2>Let's connect.</h2>
-      <p>I am interested in opportunities that will deepen my legal, investigative, and public service experience.</p>
-      <div class="actions">
-        <a class="button primary" href="mailto:rjrRyanr@gmail.com">Email Me</a>
-        <a class="button secondary" href="Ryan_Rosenthal_Resume.pdf" target="_blank">Résumé</a>
+    <section class="off-record" id="off-record">
+      <div class="off-record-header">
+        <div class="section-number">06 / OFF THE RECORD</div>
+        <h2>The part of the file that isn’t on my résumé.</h2>
+        <p>I take the professional side of this site seriously. I also think a personal website should feel like it belongs to an actual person.</p>
       </div>
-      <p class="contact-details">Dumont, NJ 07628 &nbsp;•&nbsp; rjrRyanr@gmail.com &nbsp;•&nbsp; (856) 398-4071</p>
+
+      <div class="docket">
+        <div class="docket-label">Currently on the docket</div>
+        <div class="docket-grid">
+          <div><span>Watching</span><strong>The Pitt</strong></div>
+          <div><span>Playing</span><strong>The Legend of Zelda: Breath of the Wild</strong></div>
+          <div><span>Reading</span><strong>Robinson Crusoe</strong></div>
+          <div><span>Most recent 10/10</span><strong>Obsession</strong></div>
+        </div>
+      </div>
+
+      <div class="verdict-section">
+        <div class="verdict-heading">
+          <h3>Recent Verdicts</h3>
+          <div class="tabs" role="tablist" aria-label="Recent verdict categories">
+            <button class="tab active" data-filter="all" type="button">All</button>
+            <button class="tab" data-filter="tv" type="button">TV</button>
+            <button class="tab" data-filter="film" type="button">Movies</button>
+          </div>
+        </div>
+        <div class="verdict-grid">
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 01 · Film</div><h4>Obsession</h4><div class="score">10.0</div><p>Unanimous decision. No further argument permitted.</p></article>
+          <article class="verdict-card" data-kind="tv"><div class="verdict-case">Case 02 · TV</div><h4>The Pitt</h4><div class="score">9.7</div><p>Motion to binge granted.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 03 · Film series</div><h4>Fear Street</h4><div class="score">9.8</div><p>Favorite horror series. Motion to rewatch granted indefinitely.</p></article>
+          <article class="verdict-card" data-kind="tv"><div class="verdict-case">Case 04 · TV</div><h4>TURN: Washington’s Spies</h4><div class="score">9.5</div><p>Historical evidence admitted in full.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 05 · Film</div><h4>Superman</h4><div class="score">9.4</div><p>Acquitted of superhero fatigue.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 06 · Film</div><h4>Avatar Aang: The Last Airbender</h4><div class="score">8.8</div><p>Welcome return to the record.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 07 · Film</div><h4>Five Nights at Freddy’s</h4><div class="score">8.9</div><p>Guilty of being exactly my kind of weird.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 08 · Film</div><h4>Detective Pikachu</h4><div class="score">8.7</div><p>Charm outweighs all objections.</p></article>
+          <article class="verdict-card" data-kind="film"><div class="verdict-case">Case 09 · Film</div><h4>How to Train Your Dragon</h4><div class="score">9.7</div><p>Animated precedent remains controlling authority.</p></article>
+          <article class="verdict-card" data-kind="tv"><div class="verdict-case">Case 10 · TV</div><h4>Lanterns</h4><div class="score">9.2</div><p>Case remains very much open.</p></article>
+          <article class="verdict-card lower" data-kind="film"><div class="verdict-case">Case 11 · Film</div><h4>Backrooms</h4><div class="score">5.5</div><p>Case dismissed for lack of compelling evidence.</p></article>
+        </div>
+      </div>
+
+      <div class="hyrule">
+        <div class="hyrule-heading"><span>Special file</span><h3>The Hyrule Files</h3></div>
+        <div class="hyrule-grid">
+          <article><div class="exhibit">Exhibit A</div><h4>Breath of the Wild</h4><div class="score small">10/10</div><p>Hyrule is at its best when I can ignore the main objective for three hours because I saw something strange on a mountain.</p></article>
+          <article><div class="exhibit">Exhibit B</div><h4>A Link Between Worlds</h4><div class="score small">10/10</div><p>One of my favorite 3DS games: great dungeons, the wall-merging mechanic, and enough freedom to make the world feel personal.</p></article>
+        </div>
+        <div class="ruling"><strong>Final ruling:</strong> Both permanently admitted into evidence.</div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-label">07 / CONTACT</div>
+      <h2>Let’s put something on the record.</h2>
+      <p>I’m interested in opportunities where I can keep building practical legal, investigative, and client-facing experience.</p>
+      <div class="contact-actions">
+        <a class="button light" href="mailto:rjrRyanr@gmail.com">Email me</a>
+        <a class="button outline-light" href="Ryan_Rosenthal_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </div>
+      <div class="contact-foot">Dumont, New Jersey · rjrRyanr@gmail.com</div>
     </section>
   </main>
 
-  <footer>© 2026 Ryan Rosenthal</footer>
+  <footer>
+    <a class="monogram footer-mark" href="#top"><span>§</span> RR</a>
+    <p>Designed as a living portfolio, not a static résumé.</p>
+    <p>© 2026 Ryan Rosenthal</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
