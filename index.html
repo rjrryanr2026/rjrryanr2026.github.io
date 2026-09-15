@@ -285,183 +285,6 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
   .verdict-heading p{text-align:left;margin-top:8px}
 }
 
-
-/* ===== V6 STRUCTURE ADDITIONS — V4 COLORS PRESERVED ===== */
-
-/* Earlier jobs are intentionally separated from the primary timeline */
-.early-work{
-  margin-top:44px;
-  display:grid;
-  grid-template-columns:.85fr 1.35fr;
-  gap:30px;
-  padding:30px;
-  background:linear-gradient(145deg,#f6edf8,#eadcf0);
-  border:1px solid #cfbad8;
-}
-.early-work-intro span{
-  display:block;
-  font-size:9px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:#7b2d91;
-  font-weight:800;
-  margin-bottom:10px;
-}
-.early-work-intro h3{
-  margin:0 0 12px;
-  font:400 31px/1.08 var(--serif);
-  color:#4f175f;
-}
-.early-work-intro p{
-  margin:0;
-  color:#6b5a70;
-  max-width:470px;
-}
-.early-work-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-.early-work-grid article{
-  background:#fffafd;
-  border:1px solid #d0bdd8;
-  padding:22px;
-}
-.early-date{
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:.14em;
-  color:#8b559d;
-  font-weight:800;
-}
-.early-work-grid h4{
-  margin:16px 0 4px;
-  font:400 24px/1.1 var(--serif);
-  color:#4e175e;
-}
-.early-work-grid strong{
-  display:block;
-  color:#6a2a7b;
-  font-size:11px;
-  margin-bottom:12px;
-}
-.early-work-grid p{
-  margin:0;
-  color:#695a6d;
-  font-size:12px;
-}
-
-/* Separate media dockets, no dropdowns */
-.media-docket{
-  margin-top:58px;
-  padding-top:34px;
-  border-top:1px solid rgba(255,255,255,.18);
-}
-.media-docket-head{
-  display:grid;
-  grid-template-columns:150px 1fr;
-  gap:28px;
-  align-items:end;
-  margin-bottom:18px;
-}
-.media-docket-head>span{
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:.16em;
-  color:#d7b5e0;
-  font-weight:800;
-}
-.media-docket-head h3{
-  margin:0;
-  font:400 36px/1 var(--serif);
-  color:#fff;
-}
-.media-docket-head p{
-  margin:8px 0 0;
-  color:#cbb9d1;
-  font-size:12px;
-}
-.media-list{
-  border-top:1px solid #684975;
-}
-.media-list article{
-  display:grid;
-  grid-template-columns:82px minmax(0,1fr) 150px;
-  gap:18px;
-  align-items:center;
-  padding:15px 16px;
-  border-bottom:1px solid rgba(255,255,255,.10);
-  background:rgba(38,14,46,.48);
-}
-.media-list article:nth-child(even){
-  background:rgba(49,17,59,.58);
-}
-.media-list article b{
-  font:400 24px/1 var(--serif);
-  color:#e0bee8;
-}
-.media-list article strong{
-  display:block;
-  font:400 18px/1.15 var(--serif);
-  color:#fff;
-}
-.media-list article small{
-  display:block;
-  color:#c9b8cf;
-  font-size:10px;
-  margin-top:4px;
-}
-.media-list article em{
-  justify-self:end;
-  font-style:normal;
-  font-size:8px;
-  text-transform:uppercase;
-  letter-spacing:.13em;
-  font-weight:800;
-  color:#c89dd3;
-  text-align:right;
-}
-.media-list article.media-low{
-  background:rgba(29,25,34,.72);
-}
-.compact-media{
-  max-width:1000px;
-}
-.game-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-}
-.game-grid .hyrule-card em{
-  display:block;
-  margin-top:18px;
-  font-style:normal;
-  font-size:8px;
-  letter-spacing:.15em;
-  color:#6d287e;
-  font-weight:800;
-}
-.recent-verdicts{
-  margin-top:54px;
-}
-.recent-grid{
-  grid-template-columns:repeat(4,1fr);
-}
-
-@media(max-width:1050px){
-  .early-work{grid-template-columns:1fr}
-  .media-list article{grid-template-columns:70px minmax(0,1fr) 130px}
-}
-@media(max-width:760px){
-  .early-work{padding:22px}
-  .early-work-grid{grid-template-columns:1fr}
-  .media-docket-head{grid-template-columns:1fr;gap:8px}
-  .media-list article{grid-template-columns:60px 1fr}
-  .media-list article em{grid-column:2;justify-self:start}
-  .game-grid{grid-template-columns:1fr}
-  .recent-grid{grid-template-columns:1fr}
-}
-
 </style>
 </head>
 <body>
@@ -510,69 +333,9 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
   <details class="additional"><summary>Additional writing</summary><div><strong>Digital Assets</strong> — A focused policy analysis of federal digital-asset regulation, consumer protection, enforcement, innovation, and regulatory tradeoffs. <a href="Digital_Assets_Policy_Analysis.pdf" target="_blank">Read PDF ↗</a></div></details>
 </section></div>
 
-
 <section class="section" id="experience">
-  <div class="section-head">
-    <div class="sec-no">03 / Experience</div>
-    <div>
-      <h2>From records to facts to next steps.</h2>
-      <p class="section-sub">The work that has taught me most about organization, judgment, accountability, and communicating clearly with people.</p>
-    </div>
-  </div>
-
-  <div class="timeline">
-    <article class="role">
-      <div class="role-date"><strong>Sept–Dec 2025</strong>Newark, New Jersey</div>
-      <div>
-        <div class="org">New Jersey Office of the Attorney General · Division of Consumer Affairs</div>
-        <h3>Intern Investigator</h3>
-        <p>I supported consumer-protection investigations through document review, legal and regulatory research, investigative writing, complaint intake, and case-file management. I worked with contracts, service agreements, business records, and case data inside an active government enforcement environment.</p>
-        <div class="takeaway">What stayed with me: the importance of being able to explain why a fact matters, not simply finding it.</div>
-      </div>
-    </article>
-
-    <article class="role">
-      <div class="role-date"><strong>2022–Present</strong>Montclair, New Jersey</div>
-      <div>
-        <div class="org">Montclair State University · School of Communication &amp; Media</div>
-        <h3>Equipment Desk / “The Cage”</h3>
-        <p>I support students with equipment checkouts and returns while helping manage inventory, loan records, and day-to-day desk operations. The role has strengthened my attention to detail, accountability for shared resources, and ability to explain procedures clearly.</p>
-      </div>
-    </article>
-
-    <article class="role">
-      <div class="role-date"><strong>2020–2026</strong>Clifton, New Jersey</div>
-      <div>
-        <div class="org">Target · Store 1822</div>
-        <h3>Inbound, Receiving, Consumables &amp; General Merchandise Expert</h3>
-        <p>Long-term retail and operations experience gave me a practical foundation in teamwork, accountability, inventory accuracy, conflict resolution, and communicating clearly with people in fast-moving situations.</p>
-      </div>
-    </article>
-  </div>
-
-  <div class="early-work">
-    <div class="early-work-intro">
-      <span>Earlier Experience</span>
-      <h3>I started working while I was still in high school.</h3>
-      <p>Before my college and legal experience, I was already balancing two pool jobs at the same time. I keep them here because they were my first real lessons in responsibility, safety, and showing up for people who were counting on me.</p>
-    </div>
-
-    <div class="early-work-grid">
-      <article>
-        <div class="early-date">2019–2021</div>
-        <h4>Pentagon Pools</h4>
-        <strong>Lifeguard / Pool Technician</strong>
-        <p>Safety-focused work combined with hands-on pool operations and maintenance responsibilities.</p>
-      </article>
-
-      <article>
-        <div class="early-date">2019–2021</div>
-        <h4>Tavistock Hills Swim Club</h4>
-        <strong>Lifeguard</strong>
-        <p>Patron safety, rule enforcement, emergency readiness, and maintaining a safe pool environment.</p>
-      </article>
-    </div>
-  </div>
+  <div class="section-head"><div class="sec-no">03 / Experience</div><div><h2>From records to facts to next steps.</h2><p class="section-sub">The work that has taught me most about organization, judgment, and explaining why a fact matters.</p></div></div>
+  <div class="timeline"><article class="role"><div class="role-date"><strong>Sept–Dec 2025</strong>Newark, New Jersey</div><div><div class="org">New Jersey Office of the Attorney General · Division of Consumer Affairs</div><h3>Intern Investigator</h3><p>I supported consumer-protection investigations through document review, legal and regulatory research, investigative writing, complaint intake, and case-file management. I worked with contracts, service agreements, business records, and case data inside an active government enforcement environment.</p><div class="takeaway">What stayed with me: the importance of being able to explain why a fact matters, not simply finding it.</div></div></article><article class="role"><div class="role-date"><strong>2020–2026</strong>Clifton, New Jersey</div><div><div class="org">Target · Store 1822</div><h3>Inbound, Receiving, Consumables & General Merchandise Expert</h3><p>Long-term retail and operations experience gave me a practical foundation in teamwork, accountability, inventory accuracy, conflict resolution, and communicating clearly with people in fast-moving situations.</p></div></article></div>
 </section>
 
 <section class="section" id="education">
@@ -585,7 +348,6 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
   <div class="section-head"><div class="sec-no">05 / Areas of Interest</div><div><h2>Areas I’m interested in exploring in practice.</h2><p class="section-sub">Interests, not claimed specialties. I’m still learning where my strengths can be most useful.</p></div></div>
   <div><article class="interest-row"><div class="n">01</div><h3>Family Law & Child Advocacy</h3><p>Parental rights, child welfare, and the way courts balance legal standards with consequences for families.</p></article><article class="interest-row"><div class="n">02</div><h3>Trusts & Estates</h3><p>Estate planning, probate, client counseling, and helping families navigate important decisions with clarity.</p></article><article class="interest-row"><div class="n">03</div><h3>Litigation & Legal Practice</h3><p>Case development, legal research, drafting, discovery, client communication, and the practical work behind a strong legal matter.</p></article><article class="interest-row"><div class="n">04</div><h3>Investigations & Regulatory Law</h3><p>Building on government experience with consumer protection, records, regulatory research, fact development, and enforcement matters.</p></article><article class="interest-row"><div class="n">05</div><h3>Public Service</h3><p>Work where legal skills intersect with government, community needs, and institutions that directly affect people’s lives.</p></article></div>
 </section>
-
 
 
 <section class="off-record" id="off-record">
@@ -606,7 +368,6 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
         </div>
         <div class="docket-stamp">STATUS: ACTIVE</div>
       </div>
-
       <div class="docket-grid">
         <article><span>Watching</span><strong>The Pitt</strong><small>Medical drama · current watch</small></article>
         <article><span>Playing</span><strong>Breath of the Wild</strong><small>Hyrule remains an open matter</small></article>
@@ -615,114 +376,51 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
       </div>
     </section>
 
-    <section class="verdict-section recent-verdicts">
+    <section class="verdict-section">
       <div class="verdict-heading">
-        <div><span>Latest rulings</span><h3>Recent Verdicts</h3></div>
-        <p>The most recent matters to reach a final ruling.</p>
+        <div><span>Film Docket</span><h3>Recent Verdicts</h3></div>
+        <p>My completely non-binding rulings on what I’ve been watching lately.</p>
       </div>
-
-      <div class="verdict-grid recent-grid">
-        <article class="verdict-card">
-          <div class="verdict-top"><span>Film / Horror</span><b>10.0</b></div>
-          <h4>Obsession</h4>
-          <p>Unanimous decision. No further argument permitted.</p>
-          <em>FINAL JUDGMENT</em>
-        </article>
-
-        <article class="verdict-card">
-          <div class="verdict-top"><span>Television</span><b>9.7</b></div>
-          <h4>The Pitt</h4>
-          <p>Motion to binge granted.</p>
-          <em>CONTINUED HEARING</em>
-        </article>
-
-        <article class="verdict-card">
-          <div class="verdict-top"><span>Film / DC</span><b>9.4</b></div>
-          <h4>Superman</h4>
-          <p>Acquitted of superhero fatigue. Optimism remains admissible.</p>
-          <em>ACQUITTED</em>
-        </article>
-
-        <article class="verdict-card low">
-          <div class="verdict-top"><span>Film / Horror</span><b>5.2</b></div>
-          <h4>Backrooms</h4>
-          <p>The atmosphere made its case. The rest did not persuade the court.</p>
-          <em>MOTION TO DISMISS</em>
-        </article>
+      <div class="verdict-grid">
+        <article class="verdict-card"><div class="verdict-top"><span>01 / Horror</span><b>10.0</b></div><h4>Obsession</h4><p>Unanimous decision. No further argument permitted.</p><em>FINAL JUDGMENT</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>02 / Epic</span><b>9.4</b></div><h4>The Odyssey</h4><p>Huge scale, mythology, and exactly the kind of world I like getting lost in.</p><em>AFFIRMED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>03 / DC</span><b>9.2</b></div><h4>Supergirl</h4><p>A strong ruling for a superhero story with personality and a different edge.</p><em>FAVORABLE RULING</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>04 / DC</span><b>9.4</b></div><h4>Superman</h4><p>Acquitted of superhero fatigue. Optimism remains admissible.</p><em>ACQUITTED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>05 / Animation</span><b>9.0</b></div><h4>Avatar Aang: The Last Airbender</h4><p>A welcome return to a world I already care about, with more history to explore.</p><em>ADMITTED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>06 / Fantasy</span><b>9.1</b></div><h4>How to Train Your Dragon</h4><p>The live-action version gets the petition approved. The animated films still set the precedent.</p><em>PETITION GRANTED</em></article>
+        <article class="verdict-card low"><div class="verdict-top"><span>07 / Horror</span><b>5.2</b></div><h4>Backrooms</h4><p>The atmosphere made its case. The rest did not persuade the court.</p><em>MOTION TO DISMISS</em></article>
       </div>
     </section>
 
-    <section class="media-docket">
-      <div class="media-docket-head">
-        <span>01 / Movies</span>
-        <div>
-          <h3>Movie Verdicts</h3>
-          <p>From horror to animation to superheroes. The court has broad jurisdiction.</p>
-        </div>
+    <section class="verdict-section tv-docket">
+      <div class="verdict-heading">
+        <div><span>Television Docket</span><h3>Series on the Record</h3></div>
+        <p>Long-form matters that earned more than one hearing.</p>
       </div>
-
-      <div class="media-list">
-        <article><b>10.0</b><div><strong>Obsession</strong><small>Unanimous decision. No further argument permitted.</small></div><em>Final judgment</em></article>
-        <article><b>9.8</b><div><strong>Fear Street</strong><small>Favorite horror series. Motion to rewatch permanently granted.</small></div><em>Controlling authority</em></article>
-        <article><b>9.7</b><div><strong>How to Train Your Dragon · Animated</strong><small>Still the precedent the live-action version has to answer to.</small></div><em>Precedent set</em></article>
-        <article><b>9.4</b><div><strong>The Odyssey</strong><small>Epic testimony. Court remains impressed.</small></div><em>Affirmed</em></article>
-        <article><b>9.4</b><div><strong>Superman</strong><small>Acquitted of superhero fatigue.</small></div><em>Acquitted</em></article>
-        <article><b>9.2</b><div><strong>Supergirl</strong><small>A strong ruling for a superhero story with its own personality.</small></div><em>Favorable ruling</em></article>
-        <article><b>9.1</b><div><strong>How to Train Your Dragon · Live Action</strong><small>Respectful adaptation. Petition approved.</small></div><em>Petition granted</em></article>
-        <article><b>9.0</b><div><strong>Avatar Aang: The Last Airbender</strong><small>A welcome return to a world already admitted into evidence.</small></div><em>Admitted</em></article>
-        <article><b>8.9</b><div><strong>Five Nights at Freddy’s</strong><small>Guilty of being exactly my kind of weird.</small></div><em>Guilty</em></article>
-        <article><b>8.8</b><div><strong>Spirited Away</strong><small>A case for letting animation be strange, beautiful, and completely itself.</small></div><em>Affirmed</em></article>
-        <article><b>8.7</b><div><strong>Detective Pikachu</strong><small>Charm outweighs all objections.</small></div><em>Objections overruled</em></article>
-        <article><b>8.6</b><div><strong>The Big Short</strong><small>Financial chaos presented as compelling testimony.</small></div><em>Evidence admitted</em></article>
-        <article class="media-low"><b>5.2</b><div><strong>Backrooms</strong><small>The atmosphere made its case. The rest did not.</small></div><em>Dismissed</em></article>
+      <div class="tv-grid">
+        <article><span>Medical drama</span><strong>The Pitt</strong><b>9.7 / 10</b><small>Motion to binge granted.</small></article>
+        <article><span>DC / mystery</span><strong>Lanterns</strong><b>9.2 / 10</b><small>Case remains very much open.</small></article>
+        <article><span>Historical drama</span><strong>TURN: Washington’s Spies</strong><b>9.5 / 10</b><small>Historical evidence admitted in full.</small></article>
       </div>
     </section>
 
-    <section class="media-docket">
-      <div class="media-docket-head">
-        <span>02 / Television</span>
-        <div>
-          <h3>TV Verdicts</h3>
-          <p>Long-form matters get more hearings, but not necessarily more mercy.</p>
-        </div>
-      </div>
+    <div class="favorites-strip">
+      <div><span>Favorite horror series</span><strong>Fear Street · 9.8/10</strong></div>
+      <div><span>Animated precedent</span><strong>How to Train Your Dragon · 9.7/10</strong></div>
+      <div><span>Game adaptation</span><strong>Five Nights at Freddy’s · 8.9/10</strong></div>
+      <div><span>Comfort case</span><strong>Detective Pikachu · 8.7/10</strong></div>
+    </div>
 
-      <div class="media-list compact-media">
-        <article><b>9.7</b><div><strong>The Pitt</strong><small>Motion to binge granted.</small></div><em>Active matter</em></article>
-        <article><b>9.5</b><div><strong>TURN: Washington’s Spies</strong><small>Historical evidence admitted in full.</small></div><em>Affirmed</em></article>
-        <article><b>9.2</b><div><strong>Lanterns</strong><small>Case remains very much open.</small></div><em>Proceedings ongoing</em></article>
-        <article><b>8.9</b><div><strong>FROM</strong><small>The court has questions. A lot of them.</small></div><em>Under review</em></article>
-        <article><b>8.7</b><div><strong>The Midnight Gospel</strong><small>Philosophically admissible.</small></div><em>Admitted</em></article>
-      </div>
-    </section>
-
-    <section class="media-docket game-docket">
-      <div class="media-docket-head">
-        <span>03 / Games</span>
-        <div>
-          <h3>Game Verdicts</h3>
-          <p>Hyrule receives unusually favorable treatment from this court.</p>
-        </div>
-      </div>
-
-      <div class="game-grid">
-        <article class="hyrule-card">
-          <div class="hyrule-score">Exhibit A · 10/10</div>
-          <h4>Breath of the Wild</h4>
-          <p>Hyrule is at its best when I can ignore the main objective for three hours because I saw something suspicious on a mountain.</p>
-          <em>PERMANENTLY ADMITTED</em>
-        </article>
-
-        <article class="hyrule-card">
-          <div class="hyrule-score">Exhibit B · 10/10</div>
-          <h4>A Link Between Worlds</h4>
-          <p>One of my favorite 3DS games: great dungeons, the wall-merging mechanic, and enough freedom to make the world feel personal.</p>
-          <em>PERMANENTLY ADMITTED</em>
-        </article>
+    <section class="hyrule">
+      <div class="hyrule-head"><span>Special file</span><h3>The Hyrule Files</h3><p>Two matters permanently admitted into evidence.</p></div>
+      <div class="hyrule-grid">
+        <article class="hyrule-card"><div class="hyrule-score">Exhibit A · 10/10</div><h4>Breath of the Wild</h4><p>Hyrule is at its best when I can ignore the main objective for three hours because I saw something strange on a mountain.</p></article>
+        <article class="hyrule-card"><div class="hyrule-score">Exhibit B · 10/10</div><h4>A Link Between Worlds</h4><p>One of my favorite 3DS games: great dungeons, the wall-merging mechanic, and enough freedom to make the world feel personal.</p></article>
       </div>
     </section>
   </div>
 </section>
+
 
 <section class="contact" id="contact">
   <div class="contact-inner">
