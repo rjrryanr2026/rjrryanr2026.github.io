@@ -235,6 +235,92 @@ nav a:hover{background:#eadcf0;color:var(--plum)}
 .favorites-strip div{background:#25102d;padding:16px}
 .favorites-strip strong{display:block;font:400 16px var(--serif);color:#fff;margin-top:7px}
 
+
+.full-docket{
+  margin-top:34px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(18,7,22,.32);
+}
+.full-docket summary{
+  list-style:none;
+  cursor:pointer;
+  padding:22px 24px;
+  display:grid;
+  grid-template-columns:170px 1fr;
+  gap:22px;
+  align-items:center;
+}
+.full-docket summary::-webkit-details-marker{display:none}
+.summary-label{
+  display:inline-block;
+  font-size:9px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#d7b8e0;
+  font-weight:800;
+  border:1px solid rgba(255,255,255,.22);
+  padding:8px 10px;
+}
+.full-docket summary strong{
+  display:block;
+  font:400 28px/1.15 var(--serif);
+  color:#fff;
+}
+.full-docket summary em{
+  display:block;
+  font-style:normal;
+  color:#cdbbd2;
+  margin-top:6px;
+  font-size:12px;
+}
+.full-docket[open] summary{
+  border-bottom:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.03);
+}
+.full-docket-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  padding:22px;
+}
+.docket-column{
+  background:rgba(36,14,44,.55);
+  border:1px solid rgba(255,255,255,.10);
+  padding:16px;
+}
+.docket-column-head{
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#d9bee1;
+  font-weight:800;
+  margin-bottom:14px;
+}
+.mini-item{
+  border-top:1px solid rgba(255,255,255,.10);
+  padding:13px 0 12px;
+}
+.mini-item:first-of-type{border-top:none;padding-top:0}
+.mini-item span{
+  display:block;
+  color:#ddbde6;
+  font:400 18px/1 var(--serif);
+}
+.mini-item strong{
+  display:block;
+  color:#fff;
+  font:400 20px/1.2 var(--serif);
+  margin:6px 0 4px;
+}
+.mini-item small{
+  color:#c8b6ce;
+  font-size:11px;
+}
+@media(max-width:760px){
+  .full-docket summary{grid-template-columns:1fr}
+  .full-docket-grid{grid-template-columns:1fr}
+}
+
 .hyrule{margin-top:40px;border-top:1px solid rgba(255,255,255,.20);padding-top:38px}
 .hyrule-head{display:grid;grid-template-columns:150px 1fr 1fr;gap:24px;align-items:end}
 .hyrule-head span{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:#c4a5cd;font-weight:800}
@@ -335,7 +421,53 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
 
 <section class="section" id="experience">
   <div class="section-head"><div class="sec-no">03 / Experience</div><div><h2>From records to facts to next steps.</h2><p class="section-sub">The work that has taught me most about organization, judgment, and explaining why a fact matters.</p></div></div>
-  <div class="timeline"><article class="role"><div class="role-date"><strong>Sept–Dec 2025</strong>Newark, New Jersey</div><div><div class="org">New Jersey Office of the Attorney General · Division of Consumer Affairs</div><h3>Intern Investigator</h3><p>I supported consumer-protection investigations through document review, legal and regulatory research, investigative writing, complaint intake, and case-file management. I worked with contracts, service agreements, business records, and case data inside an active government enforcement environment.</p><div class="takeaway">What stayed with me: the importance of being able to explain why a fact matters, not simply finding it.</div></div></article><article class="role"><div class="role-date"><strong>2020–2026</strong>Clifton, New Jersey</div><div><div class="org">Target · Store 1822</div><h3>Inbound, Receiving, Consumables & General Merchandise Expert</h3><p>Long-term retail and operations experience gave me a practical foundation in teamwork, accountability, inventory accuracy, conflict resolution, and communicating clearly with people in fast-moving situations.</p></div></article></div>
+  <div class="timeline">
+<article class="role">
+  <div class="role-date"><strong>Sept–Dec 2025</strong>Newark, New Jersey</div>
+  <div>
+    <div class="org">New Jersey Office of the Attorney General · Division of Consumer Affairs</div>
+    <h3>Intern Investigator</h3>
+    <p>I supported consumer-protection investigations through document review, legal and regulatory research, investigative writing, complaint intake, and case-file management. I worked with contracts, service agreements, business records, and case data inside an active government enforcement environment.</p>
+    <div class="takeaway">What stayed with me: the importance of being able to explain why a fact matters, not simply finding it.</div>
+  </div>
+</article>
+
+<article class="role">
+  <div class="role-date"><strong>2022–Present</strong>Montclair, New Jersey</div>
+  <div>
+    <div class="org">Montclair State University · School of Communication &amp; Media Equipment Desk (“The Cage”)</div>
+    <h3>Student Employee</h3>
+    <p>I help manage media-equipment loans, returns, and inventory while supporting students with checkouts, equipment questions, and day-to-day organization. The role strengthened my attention to records, accountability, and keeping processes running smoothly for other people.</p>
+  </div>
+</article>
+
+<article class="role">
+  <div class="role-date"><strong>2020–2026</strong>Clifton, New Jersey</div>
+  <div>
+    <div class="org">Target · Store 1822</div>
+    <h3>Inbound, Receiving, Consumables &amp; General Merchandise Expert</h3>
+    <p>Long-term retail and operations experience gave me a practical foundation in teamwork, accountability, inventory accuracy, conflict resolution, and communicating clearly with people in fast-moving situations.</p>
+  </div>
+</article>
+
+<article class="role">
+  <div class="role-date"><strong>2019–2021</strong>New Jersey</div>
+  <div>
+    <div class="org">Pentagon Pools</div>
+    <h3>Lifeguard / Pool Operations</h3>
+    <p>I began working while still in high school, helping monitor swimmer safety while also supporting pool operations and maintenance-related responsibilities. It was an early lesson in responsibility, safety, and staying calm when people were depending on me.</p>
+  </div>
+</article>
+
+<article class="role">
+  <div class="role-date"><strong>2019–2021</strong>New Jersey</div>
+  <div>
+    <div class="org">Tavistock Hills Swim Club</div>
+    <h3>Lifeguard</h3>
+    <p>I maintained a safe pool environment, enforced rules, and stayed prepared to respond quickly in a role built around awareness, trust, and patron safety.</p>
+  </div>
+</article>
+</div>
 </section>
 
 <section class="section" id="education">
@@ -348,6 +480,7 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
   <div class="section-head"><div class="sec-no">05 / Areas of Interest</div><div><h2>Areas I’m interested in exploring in practice.</h2><p class="section-sub">Interests, not claimed specialties. I’m still learning where my strengths can be most useful.</p></div></div>
   <div><article class="interest-row"><div class="n">01</div><h3>Family Law & Child Advocacy</h3><p>Parental rights, child welfare, and the way courts balance legal standards with consequences for families.</p></article><article class="interest-row"><div class="n">02</div><h3>Trusts & Estates</h3><p>Estate planning, probate, client counseling, and helping families navigate important decisions with clarity.</p></article><article class="interest-row"><div class="n">03</div><h3>Litigation & Legal Practice</h3><p>Case development, legal research, drafting, discovery, client communication, and the practical work behind a strong legal matter.</p></article><article class="interest-row"><div class="n">04</div><h3>Investigations & Regulatory Law</h3><p>Building on government experience with consumer protection, records, regulatory research, fact development, and enforcement matters.</p></article><article class="interest-row"><div class="n">05</div><h3>Public Service</h3><p>Work where legal skills intersect with government, community needs, and institutions that directly affect people’s lives.</p></article></div>
 </section>
+
 
 
 <section class="off-record" id="off-record">
@@ -411,6 +544,40 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
       <div><span>Comfort case</span><strong>Detective Pikachu · 8.7/10</strong></div>
     </div>
 
+    <details class="full-docket">
+      <summary>
+        <span class="summary-label">Expanded filing</span>
+        <strong>Open the Full Film &amp; Television Docket</strong>
+        <em>More favorites, comfort watches, and things still admitted into evidence.</em>
+      </summary>
+      <div class="full-docket-grid">
+        <div class="docket-column">
+          <div class="docket-column-head">Film Docket</div>
+          <article class="mini-item"><span>10.0 / 10</span><strong>Obsession</strong><small>Unanimous decision.</small></article>
+          <article class="mini-item"><span>9.8 / 10</span><strong>Fear Street trilogy</strong><small>Favorite horror series. Motion to rewatch granted indefinitely.</small></article>
+          <article class="mini-item"><span>9.7 / 10</span><strong>How to Train Your Dragon (animated)</strong><small>Still controlling precedent.</small></article>
+          <article class="mini-item"><span>9.4 / 10</span><strong>The Odyssey</strong><small>Epic testimony, fully admitted.</small></article>
+          <article class="mini-item"><span>9.4 / 10</span><strong>Superman</strong><small>Optimism remains admissible.</small></article>
+          <article class="mini-item"><span>9.2 / 10</span><strong>Supergirl</strong><small>Favorable ruling.</small></article>
+          <article class="mini-item"><span>9.1 / 10</span><strong>How to Train Your Dragon (live action)</strong><small>Petition approved.</small></article>
+          <article class="mini-item"><span>9.0 / 10</span><strong>Avatar Aang: The Last Airbender</strong><small>Admitted into the record.</small></article>
+          <article class="mini-item"><span>8.9 / 10</span><strong>Five Nights at Freddy’s</strong><small>Exactly my kind of weird.</small></article>
+          <article class="mini-item"><span>8.7 / 10</span><strong>Detective Pikachu</strong><small>Charm outweighs all objections.</small></article>
+          <article class="mini-item"><span>8.8 / 10</span><strong>Spirited Away</strong><small>Permanent admission into evidence.</small></article>
+          <article class="mini-item"><span>8.6 / 10</span><strong>The Big Short</strong><small>Financial chaos, but compelling testimony.</small></article>
+          <article class="mini-item"><span>5.2 / 10</span><strong>Backrooms</strong><small>Motion to dismiss granted.</small></article>
+        </div>
+        <div class="docket-column">
+          <div class="docket-column-head">Television Docket</div>
+          <article class="mini-item"><span>9.7 / 10</span><strong>The Pitt</strong><small>Motion to binge granted.</small></article>
+          <article class="mini-item"><span>9.5 / 10</span><strong>TURN: Washington’s Spies</strong><small>Historical evidence admitted in full.</small></article>
+          <article class="mini-item"><span>9.2 / 10</span><strong>Lanterns</strong><small>Case remains very much open.</small></article>
+          <article class="mini-item"><span>8.9 / 10</span><strong>FROM</strong><small>Still under active review.</small></article>
+          <article class="mini-item"><span>8.7 / 10</span><strong>The Midnight Gospel</strong><small>Philosophically admissible.</small></article>
+        </div>
+      </div>
+    </details>
+
     <section class="hyrule">
       <div class="hyrule-head"><span>Special file</span><h3>The Hyrule Files</h3><p>Two matters permanently admitted into evidence.</p></div>
       <div class="hyrule-grid">
@@ -420,7 +587,6 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
     </section>
   </div>
 </section>
-
 
 <section class="contact" id="contact">
   <div class="contact-inner">
