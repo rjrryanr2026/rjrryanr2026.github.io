@@ -58,16 +58,243 @@ footer{background:#120d14;color:#817887;padding:26px 34px;font-size:10px;text-al
 @media(max-width:1050px){.hero-inner{grid-template-columns:1fr;gap:45px}.hero-card{max-width:700px}.profile-grid{grid-template-columns:1fr}.edu-grid{grid-template-columns:1fr 1fr}.degree.minor{grid-column:1/-1;min-height:auto}.honors{grid-template-columns:1fr 1fr}.honors div:nth-child(2){border-right:0}.honors div:nth-child(-n+2){border-bottom:1px solid var(--line)}.verdicts{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:820px){.nav-wrap{padding:13px 20px}.menu{display:block}nav{display:none;position:absolute;top:63px;left:0;right:0;background:#18131b;padding:12px 20px 20px;flex-direction:column;align-items:stretch}nav.open{display:flex}nav a{padding:11px 5px}.hero-inner,.section,.off-inner{padding-left:24px;padding-right:24px}.hero-inner{padding-top:72px}.section-head{grid-template-columns:1fr;gap:9px}.sec-no:after{display:none}.feature{grid-template-columns:1fr;gap:6px}.feature-num{font-size:28px}.supporting{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:10px}.edu-grid{grid-template-columns:1fr}.degree.minor{grid-column:auto}.honors{grid-template-columns:1fr}.honors div{border-right:0!important;border-bottom:1px solid var(--line)}.honors div:last-child{border-bottom:0}.interest-row{grid-template-columns:50px 1fr}.interest-row p{grid-column:2}.off-top{display:block}.docket{grid-template-columns:1fr 1fr}.docket div:nth-child(2){border-right:0}.docket div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}.verdicts{grid-template-columns:1fr 1fr}.hyrule-grid{grid-template-columns:1fr}.contact{padding-left:24px;padding-right:24px}}
 @media(max-width:520px){.brand-copy span{display:none}.hero h1{font-size:64px}.hero-lede{font-size:21px}.facts{grid-template-columns:1fr}.support-card{min-height:auto}.why{grid-template-columns:1fr}.docket,.verdicts{grid-template-columns:1fr}.docket div{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}.docket div:last-child{border-bottom:0}.section{padding-top:80px;padding-bottom:80px}}
+
+/* ===== V4 PURPLE LEGAL EDITORIAL OVERRIDES ===== */
+:root{
+  --ink:#24152d;
+  --ink2:#32183f;
+  --plum:#4a155f;
+  --plum2:#681c80;
+  --violet:#8f4baa;
+  --lilac:#dbc6e7;
+  --cream:#f6f0f8;
+  --paper:#fffafd;
+  --gold:#b48a50;
+  --line:#d9c9df;
+  --muted:#716477;
+}
+body{
+  background:
+    linear-gradient(180deg,#f7f1f9 0%,#f3ebf6 45%,#f8f4fa 100%);
+}
+header{
+  background:rgba(248,243,250,.94);
+  border-bottom:1px solid #d9c9df;
+  box-shadow:0 6px 28px rgba(71,25,86,.06);
+}
+.nav-wrap{max-width:1400px;padding:14px 48px}
+.brand{color:var(--ink);gap:8px}
+.brand-mark{font-family:var(--serif);font-size:23px;color:var(--plum2);line-height:1}
+.brand strong{font:700 16px var(--serif);letter-spacing:.04em}
+nav a{color:#4c3b52}
+nav a:hover{background:#eadcf0;color:var(--plum)}
+.nav-cta{border:1px solid #6d3a7e;color:var(--plum)!important}
+.menu{color:var(--plum);border-color:#bea6c8}
+
+.hero{
+  background:
+    radial-gradient(circle at 82% 10%,rgba(145,74,170,.20),transparent 28%),
+    radial-gradient(circle at 18% 82%,rgba(92,28,112,.10),transparent 30%),
+    linear-gradient(120deg,#f9f5fa 0%,#f2e8f6 60%,#e9d9ef 100%);
+  color:var(--ink);
+  min-height:calc(100vh - 65px);
+  border-bottom:1px solid #d5c1dd;
+}
+.hero:before{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:12px;
+  background:linear-gradient(180deg,#40104f,#74228d,#9f63b4);
+}
+.hero:after{color:rgba(76,21,95,.045);right:-3vw;bottom:-14vw}
+.hero-inner{max-width:1400px;padding:76px 70px 70px;gap:70px}
+.kicker{color:#713a7f}.kicker:before{background:var(--plum2)}
+.hero h1{color:#2b1235}
+.hero h1 em{color:#642079}
+.hero-lede{color:#34243a}
+.btn-primary{background:var(--plum);color:#fff;box-shadow:0 10px 28px rgba(74,21,95,.18)}
+.btn-primary:hover{background:#5c1a73}
+.btn-ghost{border:1px solid #7a5587;color:var(--plum);background:rgba(255,255,255,.28)}
+.btn-ghost:hover{background:#eadcf0}
+.btn-email{background:#b48a50;color:#fff}
+.btn-email:hover{background:#9f7742}
+.hero-card{
+  background:linear-gradient(150deg,#34113f 0%,#4c165e 58%,#671d7b 100%);
+  border:1px solid #704982;
+  color:#fff;
+  box-shadow:0 30px 70px rgba(64,16,79,.23);
+  border-radius:4px;
+}
+.case-label{color:#d7bde0}.hero-card h2{color:#fff}.hero-card p{color:#ebdeef}
+.facts{background:rgba(255,255,255,.18)}
+.fact{background:rgba(28,7,35,.38)}
+.fact span{color:#d9c5df}.hero-note{color:#efe2f2}
+
+.section{max-width:1400px;padding:88px 70px}
+.section-head{grid-template-columns:145px 1fr;margin-bottom:48px}
+.sec-no{color:#7b2d91}
+.sec-no:after{background:#9e63af}
+.section h2{color:#451256}
+.section-sub{color:#746579}
+.profile-callout{
+  background:linear-gradient(145deg,#fffafd,#f3e8f7);
+  border-color:#cfbad8;
+  box-shadow:0 18px 55px rgba(72,23,88,.06);
+}
+.profile-callout:before{color:#9b63ad}
+.profile-copy strong{color:#5f1a72}
+
+.work-bg{
+  background:linear-gradient(180deg,#e8d8ee 0%,#f1e7f4 100%);
+  border-color:#cfb8d8;
+}
+.feature{border-color:#a987b4}
+.feature:first-of-type{border-color:#542067}
+.feature-num{color:#6e2a82}
+.meta-line{color:#6f277f}
+.feature h3{color:#2c1634}
+.feature .subtitle{color:#6b4774}
+.tag{background:#fbf6fc;border-color:#cbb1d5;color:#67227a}
+.work-btn{background:#511664}
+.work-btn:hover{background:#681d80}
+.work-btn.alt{border-color:#825993;color:#5b1b6d}
+.support-card{background:rgba(255,250,253,.86);border-color:#cbb6d3}
+.additional{background:#f7eff9;border-color:#ccb7d4}
+
+.timeline{border-color:#5b2669}
+.role{border-color:#d7c5dd}
+.role-date strong,.org,.role h3{color:#5d1b71}
+.takeaway{border-left-color:#8c4da2;background:#f3e7f6;padding:15px 18px}
+
+.degree{background:#fffafd;border-color:#d2c1d9}
+.degree:nth-child(2){background:#f0e2f4}
+.degree.minor{background:linear-gradient(145deg,#431154,#611b75);border-color:#5c1a70}
+.degree h3{color:#4f175f}
+.honors{background:#efe2f3;border-color:#d1bdd9}
+.honors div{border-color:#d1bdd9}
+.honors strong{color:#571a69}
+
+.interest-row{border-color:#d4c4da}
+.interest-row .n{color:#8d54a0}
+.interest-row h3{color:#511862}
+
+/* Off the Record becomes a full purple editorial feature */
+.off-record{
+  background:
+    radial-gradient(circle at 90% 5%,rgba(194,133,214,.20),transparent 28%),
+    linear-gradient(145deg,#211028 0%,#34113f 45%,#4b155c 100%);
+  padding:96px 0 110px;
+}
+.off-inner{max-width:1400px;padding:0 70px}
+.off-top{margin-bottom:34px}
+.off-top h2{color:#fff}
+.off-top p{color:#d9c9df;max-width:540px}
+.off-label{color:#d8addf}
+
+.docket-feature{
+  margin:20px 0 58px;
+  background:linear-gradient(135deg,#6d2183 0%,#8c3fa1 55%,#a766b8 100%);
+  border:1px solid rgba(255,255,255,.18);
+  padding:34px;
+  box-shadow:0 28px 70px rgba(10,0,15,.24);
+}
+.docket-title-row{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.docket-eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#eadcf0;font-weight:800}
+.docket-feature h3{font:400 clamp(42px,5vw,68px)/1 var(--serif);margin:8px 0 0;color:#fff;letter-spacing:-.035em}
+.docket-stamp{border:1px solid rgba(255,255,255,.52);padding:8px 11px;font-size:9px;letter-spacing:.16em;font-weight:800;color:#fff;transform:rotate(1deg)}
+.docket-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.26);margin-top:28px}
+.docket-grid article{background:rgba(42,11,52,.50);padding:22px;min-height:155px}
+.docket-grid article.ten{background:rgba(29,5,37,.70)}
+.docket-grid span{display:block;text-transform:uppercase;letter-spacing:.13em;font-size:9px;color:#dec7e6;font-weight:800}
+.docket-grid strong{display:block;font:400 26px/1.15 var(--serif);color:#fff;margin:22px 0 12px}
+.docket-grid small{font-size:11px;color:#d9c7df}
+
+.verdict-section{margin-top:54px}
+.verdict-heading{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.18)}
+.verdict-heading span{font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:#d5aee0;font-weight:800}
+.verdict-heading h3{font:400 35px var(--serif);margin:4px 0 0;color:#fff}
+.verdict-heading p{margin:0;color:#cbb9d1;font-size:12px;max-width:430px;text-align:right}
+.verdict-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.verdict-card{background:#2b1234;border:1px solid #664774;padding:20px;min-height:220px;display:flex;flex-direction:column;position:relative}
+.verdict-card:nth-child(2n){background:#32133d}
+.verdict-card.low{background:#201c26;border-color:#6f6474}
+.verdict-top{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.verdict-top span{font-size:8px;text-transform:uppercase;letter-spacing:.13em;color:#bca9c2;font-weight:800}
+.verdict-top b{font:400 26px var(--serif);color:#e3c4ea}
+.verdict-card h4{font:400 24px/1.12 var(--serif);margin:28px 0 9px;color:#fff}
+.verdict-card p{font-size:12px;color:#cfbfd4;margin:0 0 28px}
+.verdict-card em{margin-top:auto;font-style:normal;font-size:8px;letter-spacing:.16em;color:#c69bd2;font-weight:800}
+
+.tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tv-grid article{border:1px solid #664774;background:#2b1234;padding:22px}
+.tv-grid span,.favorites-strip span{display:block;font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#c1a9c9;font-weight:800}
+.tv-grid strong{display:block;font:400 25px/1.2 var(--serif);margin:14px 0;color:white}
+.tv-grid b{display:block;font:400 22px var(--serif);color:#dfb9e8}
+.tv-grid small{display:block;color:#cdbcd2;margin-top:10px}
+
+.favorites-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#725082;margin:32px 0 0}
+.favorites-strip div{background:#25102d;padding:16px}
+.favorites-strip strong{display:block;font:400 16px var(--serif);color:#fff;margin-top:7px}
+
+.hyrule{margin-top:40px;border-top:1px solid rgba(255,255,255,.20);padding-top:38px}
+.hyrule-head{display:grid;grid-template-columns:150px 1fr 1fr;gap:24px;align-items:end}
+.hyrule-head span{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:#c4a5cd;font-weight:800}
+.hyrule-head h3{font:400 34px var(--serif);color:#fff;margin:0}
+.hyrule-head p{margin:0;color:#cdbcd2}
+.hyrule-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.hyrule-card{background:#f2e7f5;color:#2d1734;padding:26px;border:1px solid #d0b9d8}
+.hyrule-score{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6d287e;font-weight:800}
+.hyrule-card h4{font:400 27px var(--serif);margin:15px 0;color:#4c155c}
+.hyrule-card p{color:#5e4c63}
+
+.contact{
+  background:linear-gradient(125deg,#e7d5ed 0%,#f4ebf6 48%,#dfc7e7 100%);
+  color:#2d1735;
+}
+.contact-inner{max-width:1400px}
+.contact .off-label{color:#732b87}
+.contact-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.contact h2{color:#451254}
+.contact p{color:#67576d}
+.contact-card{background:#4d155e;color:white;padding:30px;border:1px solid #6e3a7e;box-shadow:0 22px 55px rgba(75,20,90,.15)}
+.contact-card>span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:#d9bfe1;font-weight:800}
+.contact-email{display:block;font:400 clamp(25px,3vw,42px)/1.15 var(--serif);color:#fff;text-decoration:none;margin:18px 0 25px;word-break:break-word}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:18px}
+.contact-links a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.35);padding:9px 11px;font-size:10px;font-weight:800}
+.contact-card small{display:block;color:#d8c6dd;margin-top:22px}
+
+footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
+
+@media(max-width:1050px){
+  .hero-inner{grid-template-columns:1fr;padding:64px 44px}
+  .hero-card{max-width:760px}
+  .docket-grid{grid-template-columns:1fr 1fr}
+  .verdict-grid{grid-template-columns:1fr 1fr}
+  .favorites-strip{grid-template-columns:1fr 1fr}
+  .contact-layout{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .nav-wrap{padding:12px 18px}
+  .section,.off-inner{padding-left:24px;padding-right:24px}
+  .hero-inner{padding:54px 28px}
+  .hero h1{font-size:clamp(64px,22vw,92px)}
+  .section-head{grid-template-columns:1fr;gap:12px}
+  .profile-grid,.supporting,.edu-grid,.honors,.role,.interest-row,.hyrule-head,.hyrule-grid{grid-template-columns:1fr}
+  .docket-title-row,.verdict-heading{display:block}
+  .docket-stamp{display:inline-block;margin-top:16px}
+  .docket-grid,.verdict-grid,.tv-grid,.favorites-strip{grid-template-columns:1fr}
+  .verdict-heading p{text-align:left;margin-top:8px}
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="nav-wrap">
-    <a class="brand" href="#top"><span class="seal">§</span><span class="brand-copy"><strong>Ryan Rosenthal</strong><span>Legal portfolio</span></span></a>
+    <a class="brand" href="#top" aria-label="Ryan Rosenthal home"><span class="brand-mark">§</span><strong>RR</strong></a>
     <button class="menu" id="menu" aria-expanded="false">Menu</button>
     <nav id="nav">
-      <a href="#profile">Profile</a><a href="#work">Selected Work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#interests">Interests</a><a href="#off-record">Off the Record</a><a class="nav-cta" href="Ryan_Rosenthal_Resume.pdf" target="_blank">Résumé ↗</a>
+      <a href="#profile">Profile</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#interests">Interests</a><a href="#off-record">Off the Record</a><a href="#contact">Contact</a><a class="nav-cta" href="Ryan_Rosenthal_Resume.pdf" target="_blank">Résumé ↗</a>
     </nav>
   </div>
 </header>
@@ -78,7 +305,7 @@ footer{background:#120d14;color:#817887;padding:26px 34px;font-size:10px;text-al
       <div class="kicker">Legal research · investigations · public service</div>
       <h1>Ryan <em>Rosenthal</em></h1>
       <p class="hero-lede">I’m interested in the part of law where research becomes practical: finding the facts, understanding how rules affect real people, and turning complicated information into something clear and useful.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#work">View selected work →</a><a class="btn btn-ghost" href="Ryan_Rosenthal_Resume.pdf" target="_blank">Open résumé ↗</a></div>
+      <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore selected work →</a><a class="btn btn-ghost" href="Ryan_Rosenthal_Resume.pdf" target="_blank">View résumé ↗</a><a class="btn btn-email" href="mailto:rjrRyanr@gmail.com">Email me ↗</a></div>
     </div>
     <aside class="hero-card">
       <div class="case-label">Personal file · 2026</div>
@@ -122,13 +349,99 @@ footer{background:#120d14;color:#817887;padding:26px 34px;font-size:10px;text-al
   <div><article class="interest-row"><div class="n">01</div><h3>Family Law & Child Advocacy</h3><p>Parental rights, child welfare, and the way courts balance legal standards with consequences for families.</p></article><article class="interest-row"><div class="n">02</div><h3>Trusts & Estates</h3><p>Estate planning, probate, client counseling, and helping families navigate important decisions with clarity.</p></article><article class="interest-row"><div class="n">03</div><h3>Litigation & Legal Practice</h3><p>Case development, legal research, drafting, discovery, client communication, and the practical work behind a strong legal matter.</p></article><article class="interest-row"><div class="n">04</div><h3>Investigations & Regulatory Law</h3><p>Building on government experience with consumer protection, records, regulatory research, fact development, and enforcement matters.</p></article><article class="interest-row"><div class="n">05</div><h3>Public Service</h3><p>Work where legal skills intersect with government, community needs, and institutions that directly affect people’s lives.</p></article></div>
 </section>
 
-<section class="off-record" id="off-record"><div class="off-inner"><div class="off-top"><div><div class="off-label">06 / Off the Record</div><h2>The part of the file that isn’t on my résumé.</h2></div><p>I take the professional side of this site seriously. I also think a personal website should feel like it belongs to an actual person.</p></div>
-  <div class="docket"><div><span>Watching</span><strong>The Pitt</strong></div><div><span>Playing</span><strong>The Legend of Zelda: Breath of the Wild</strong></div><div><span>Reading</span><strong>Robinson Crusoe</strong></div><div><span>Most recent 10/10</span><strong>Obsession</strong></div></div>
-  <div class="verdicts"><article class="verdict"><div class="case">Recent verdict · Film</div><h4>Obsession</h4><div class="score">10.0</div><p>Unanimous decision. No further argument permitted.</p></article><article class="verdict"><div class="case">Recent verdict · TV</div><h4>The Pitt</h4><div class="score">9.7</div><p>Motion to binge granted.</p></article><article class="verdict"><div class="case">Favorite horror series</div><h4>Fear Street</h4><div class="score">9.8</div><p>Motion to rewatch granted indefinitely.</p></article><article class="verdict"><div class="case">Recent verdict · TV</div><h4>TURN: Washington’s Spies</h4><div class="score">9.5</div><p>Historical evidence admitted in full.</p></article></div>
-  <div class="hyrule"><div class="hyrule-head"><span>Special file</span><h3>The Hyrule Files</h3></div><div class="hyrule-grid"><article class="hyrule-card"><div class="hyrule-score">Exhibit A · 10/10</div><h4>Breath of the Wild</h4><p>Hyrule is at its best when I can ignore the main objective for three hours because I saw something strange on a mountain.</p></article><article class="hyrule-card"><div class="hyrule-score">Exhibit B · 10/10</div><h4>A Link Between Worlds</h4><p>One of my favorite 3DS games: great dungeons, the wall-merging mechanic, and enough freedom to make the world feel personal.</p></article></div></div>
-</div></section>
 
-<section class="contact" id="contact"><div class="contact-inner"><div class="off-label">07 / Contact</div><h2>Let’s put something on the record.</h2><p>I’m interested in opportunities where I can keep building practical legal, investigative, and client-facing experience.</p><a class="btn btn-primary" href="mailto:rjrRyanr@gmail.com">Email me →</a><div class="contact-meta">Dumont, New Jersey · rjrRyanr@gmail.com · Résumé available above</div></div></section>
+<section class="off-record" id="off-record">
+  <div class="off-inner">
+    <div class="off-top">
+      <div>
+        <div class="off-label">06 / Off the Record</div>
+        <h2>The part of the file that isn’t on my résumé.</h2>
+      </div>
+      <p>I take the professional side of this site seriously. I also think a personal website should feel like it belongs to an actual person.</p>
+    </div>
+
+    <section class="docket-feature" aria-labelledby="docket-title">
+      <div class="docket-title-row">
+        <div>
+          <div class="docket-eyebrow">Current matters</div>
+          <h3 id="docket-title">Currently on the Docket</h3>
+        </div>
+        <div class="docket-stamp">STATUS: ACTIVE</div>
+      </div>
+      <div class="docket-grid">
+        <article><span>Watching</span><strong>The Pitt</strong><small>Medical drama · current watch</small></article>
+        <article><span>Playing</span><strong>Breath of the Wild</strong><small>Hyrule remains an open matter</small></article>
+        <article><span>Reading</span><strong>Robinson Crusoe</strong><small>Current reading file</small></article>
+        <article class="ten"><span>Most recent 10/10</span><strong>Obsession</strong><small>Unanimous decision</small></article>
+      </div>
+    </section>
+
+    <section class="verdict-section">
+      <div class="verdict-heading">
+        <div><span>Film Docket</span><h3>Recent Verdicts</h3></div>
+        <p>My completely non-binding rulings on what I’ve been watching lately.</p>
+      </div>
+      <div class="verdict-grid">
+        <article class="verdict-card"><div class="verdict-top"><span>01 / Horror</span><b>10.0</b></div><h4>Obsession</h4><p>Unanimous decision. No further argument permitted.</p><em>FINAL JUDGMENT</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>02 / Epic</span><b>9.4</b></div><h4>The Odyssey</h4><p>Huge scale, mythology, and exactly the kind of world I like getting lost in.</p><em>AFFIRMED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>03 / DC</span><b>9.2</b></div><h4>Supergirl</h4><p>A strong ruling for a superhero story with personality and a different edge.</p><em>FAVORABLE RULING</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>04 / DC</span><b>9.4</b></div><h4>Superman</h4><p>Acquitted of superhero fatigue. Optimism remains admissible.</p><em>ACQUITTED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>05 / Animation</span><b>9.0</b></div><h4>Avatar Aang: The Last Airbender</h4><p>A welcome return to a world I already care about, with more history to explore.</p><em>ADMITTED</em></article>
+        <article class="verdict-card"><div class="verdict-top"><span>06 / Fantasy</span><b>9.1</b></div><h4>How to Train Your Dragon</h4><p>The live-action version gets the petition approved. The animated films still set the precedent.</p><em>PETITION GRANTED</em></article>
+        <article class="verdict-card low"><div class="verdict-top"><span>07 / Horror</span><b>5.2</b></div><h4>Backrooms</h4><p>The atmosphere made its case. The rest did not persuade the court.</p><em>MOTION TO DISMISS</em></article>
+      </div>
+    </section>
+
+    <section class="verdict-section tv-docket">
+      <div class="verdict-heading">
+        <div><span>Television Docket</span><h3>Series on the Record</h3></div>
+        <p>Long-form matters that earned more than one hearing.</p>
+      </div>
+      <div class="tv-grid">
+        <article><span>Medical drama</span><strong>The Pitt</strong><b>9.7 / 10</b><small>Motion to binge granted.</small></article>
+        <article><span>DC / mystery</span><strong>Lanterns</strong><b>9.2 / 10</b><small>Case remains very much open.</small></article>
+        <article><span>Historical drama</span><strong>TURN: Washington’s Spies</strong><b>9.5 / 10</b><small>Historical evidence admitted in full.</small></article>
+      </div>
+    </section>
+
+    <div class="favorites-strip">
+      <div><span>Favorite horror series</span><strong>Fear Street · 9.8/10</strong></div>
+      <div><span>Animated precedent</span><strong>How to Train Your Dragon · 9.7/10</strong></div>
+      <div><span>Game adaptation</span><strong>Five Nights at Freddy’s · 8.9/10</strong></div>
+      <div><span>Comfort case</span><strong>Detective Pikachu · 8.7/10</strong></div>
+    </div>
+
+    <section class="hyrule">
+      <div class="hyrule-head"><span>Special file</span><h3>The Hyrule Files</h3><p>Two matters permanently admitted into evidence.</p></div>
+      <div class="hyrule-grid">
+        <article class="hyrule-card"><div class="hyrule-score">Exhibit A · 10/10</div><h4>Breath of the Wild</h4><p>Hyrule is at its best when I can ignore the main objective for three hours because I saw something strange on a mountain.</p></article>
+        <article class="hyrule-card"><div class="hyrule-score">Exhibit B · 10/10</div><h4>A Link Between Worlds</h4><p>One of my favorite 3DS games: great dungeons, the wall-merging mechanic, and enough freedom to make the world feel personal.</p></article>
+      </div>
+    </section>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="off-label">07 / Contact</div>
+    <div class="contact-layout">
+      <div>
+        <h2>Let’s put something on the record.</h2>
+        <p>I’m interested in opportunities where I can keep building practical legal, investigative, and client-facing experience.</p>
+      </div>
+      <div class="contact-card">
+        <span>Best way to reach me</span>
+        <a class="contact-email" href="mailto:rjrRyanr@gmail.com">rjrRyanr@gmail.com</a>
+        <div class="contact-links">
+          <a href="mailto:rjrRyanr@gmail.com">Send an email →</a>
+          <a href="Ryan_Rosenthal_Resume.pdf" target="_blank">Open résumé →</a>
+        </div>
+        <small>Dumont, New Jersey · Open to legal & investigative opportunities</small>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer>© 2026 Ryan Rosenthal · Built as a living portfolio, not a static résumé.</footer>
 <script>
