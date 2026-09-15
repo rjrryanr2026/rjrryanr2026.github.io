@@ -423,10 +423,738 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
   .media-cards,.tv-cards,.game-cards{grid-template-columns:1fr}
 }
 
+
+/* ===== V8.3 CALM PURPLE Y2K =====
+   Goal: modern Y2K, purple-forward, soft contrast, readable, not neon-heavy.
+*/
+:root{
+  --soft-bg:#e9e0ef;
+  --soft-bg-2:#ded1e6;
+  --panel:#f1eaf4;
+  --panel-2:#e7dbea;
+  --plum:#3c2547;
+  --plum-2:#563466;
+  --violet:#7a5a8d;
+  --violet-2:#9474a8;
+  --lilac:#c8b4d2;
+  --silver-lilac:#d8cedd;
+  --ink:#2b2030;
+  --muted:#6d6072;
+  --line:#cbbbd2;
+}
+
+/* overall */
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(circle at 12% 8%, rgba(151,116,170,.12), transparent 28%),
+    linear-gradient(180deg,var(--soft-bg) 0%,#e5dbe9 48%,#dfd3e5 100%) !important;
+  color:var(--ink) !important;
+}
+
+/* nav */
+header{
+  background:rgba(239,232,243,.92) !important;
+  border-bottom:1px solid rgba(86,52,102,.14) !important;
+  box-shadow:0 8px 24px rgba(70,45,82,.06) !important;
+  backdrop-filter:blur(14px) saturate(120%);
+}
+.brand{color:var(--plum) !important}
+.brand-mark{color:var(--violet) !important}
+nav a{
+  color:#514456 !important;
+  border-radius:999px;
+}
+nav a:hover{
+  background:rgba(122,90,141,.10) !important;
+  color:var(--plum) !important;
+}
+.nav-cta{
+  border:1px solid rgba(86,52,102,.30) !important;
+  background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(201,183,211,.18)) !important;
+  color:var(--plum) !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.55);
+}
+
+/* hero */
+.hero{
+  background:
+    radial-gradient(circle at 80% 14%,rgba(159,127,177,.18),transparent 25%),
+    radial-gradient(circle at 15% 78%,rgba(112,79,131,.10),transparent 28%),
+    linear-gradient(135deg,#eee7f1 0%,#e1d5e7 55%,#d8c9e0 100%) !important;
+  color:var(--ink) !important;
+  border-bottom:1px solid rgba(82,50,97,.12) !important;
+}
+.hero:before{
+  width:8px !important;
+  background:linear-gradient(180deg,#6f4d80,#9f80ae,#684479) !important;
+  box-shadow:none !important;
+}
+.hero:after{
+  color:rgba(69,42,82,.035) !important;
+}
+.kicker{color:#765783 !important}
+.kicker:before{background:#876798 !important}
+.hero h1{
+  color:#322039 !important;
+  text-shadow:none !important;
+}
+.hero h1 em{
+  color:#624170 !important;
+  background:none !important;
+  -webkit-text-fill-color:initial !important;
+  filter:none !important;
+}
+.hero-lede{color:#3f3244 !important}
+.hero-copy p{color:#685b6c !important}
+
+/* buttons: subtle Y2K pill/glass */
+.btn{
+  border-radius:999px !important;
+}
+.btn-primary{
+  background:linear-gradient(180deg,#684878,#563663) !important;
+  color:#fff !important;
+  border:1px solid rgba(67,41,78,.20) !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.20),0 8px 20px rgba(73,48,84,.12) !important;
+}
+.btn-primary:hover{background:#5b3b69 !important}
+.btn-ghost{
+  background:rgba(247,242,249,.48) !important;
+  border:1px solid rgba(86,52,102,.24) !important;
+  color:var(--plum) !important;
+}
+.btn-email{
+  background:linear-gradient(180deg,#9172a0,#775987) !important;
+  color:#fff !important;
+  border:1px solid rgba(77,50,89,.18) !important;
+}
+
+/* hero side card */
+.hero-card{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02)),
+    linear-gradient(145deg,#53355f,#3f2948) !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  border-radius:22px !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.15),0 24px 52px rgba(61,39,70,.14) !important;
+}
+.hero-card h2{color:#fff !important}
+.case-label{color:#d9c7e0 !important}
+.hero-card p,.hero-note{color:#e5dae9 !important}
+.facts{background:rgba(255,255,255,.06) !important}
+.fact{
+  background:rgba(255,255,255,.055) !important;
+  border:1px solid rgba(255,255,255,.07) !important;
+  border-radius:14px;
+}
+.fact span{color:#d7cadb !important}
+
+/* all main sections */
+.section{
+  max-width:1400px;
+  background:transparent !important;
+}
+.section h2{color:#442b50 !important}
+.section-sub{color:#766879 !important}
+.sec-no{
+  color:#755183 !important;
+  background:rgba(121,88,139,.08);
+  border:1px solid rgba(121,88,139,.14);
+  padding:6px 9px;
+  border-radius:999px;
+  width:max-content;
+}
+.sec-no:after{background:#a58ab1 !important}
+
+/* profile/work cards */
+.profile-callout,
+.feature,
+.support-card,
+.additional,
+.degree,
+.early-work,
+.early-work-grid article,
+.honors,
+.takeaway{
+  background:rgba(242,235,245,.72) !important;
+  border-color:rgba(105,76,119,.16) !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.46),0 12px 30px rgba(79,57,88,.05) !important;
+}
+.profile-callout,
+.feature,
+.support-card,
+.additional,
+.degree{
+  border-radius:18px !important;
+}
+.profile-callout:before{color:#a183ac !important}
+.profile-copy strong,
+.feature h3,
+.degree h3,
+.role h3,
+.org,
+.interest-row h3,
+.early-work-intro h3,
+.early-work-grid h4{
+  color:#4c3158 !important;
+}
+.profile-copy p,
+.feature p,
+.degree p,
+.role p,
+.interest-row p,
+.early-work-intro p,
+.early-work-grid p{
+  color:#6b5f6f !important;
+}
+.meta-line,.type,.early-date,.early-label{color:#876493 !important}
+.tag{
+  background:rgba(122,90,141,.09) !important;
+  border-color:rgba(122,90,141,.18) !important;
+  color:#684876 !important;
+  border-radius:999px !important;
+}
+
+/* work section: purple, but soft */
+.work-bg{
+  background:
+    radial-gradient(circle at 12% 10%,rgba(134,99,151,.08),transparent 26%),
+    linear-gradient(180deg,#dfd3e5 0%,#e6dce9 100%) !important;
+  border-color:rgba(92,62,106,.10) !important;
+}
+.work-btn{
+  background:#5b3b69 !important;
+  border-radius:999px !important;
+}
+.work-btn:hover{background:#4f325c !important}
+.work-btn.alt{
+  color:#5c3d69 !important;
+  border-color:rgba(92,61,105,.24) !important;
+  border-radius:999px !important;
+}
+
+/* experience */
+.timeline{border-color:#9275a0 !important}
+.role{border-color:rgba(100,72,113,.14) !important}
+.role-date strong{color:#684676 !important}
+.takeaway{
+  border-left-color:#8c6b99 !important;
+  background:rgba(135,104,149,.08) !important;
+}
+
+/* Earlier experience: clearly separate, but not loud */
+.early-work{
+  background:linear-gradient(145deg,#dfd2e5,#e9e0ec) !important;
+  border:1px solid rgba(97,68,111,.15) !important;
+  border-radius:22px !important;
+}
+.early-work-grid article{
+  background:rgba(242,235,245,.70) !important;
+  border-radius:16px !important;
+}
+
+/* education/interests */
+.degree:nth-child(2){
+  background:rgba(229,218,234,.78) !important;
+}
+.degree.minor{
+  background:linear-gradient(145deg,#5b3c68,#472f51) !important;
+  color:#fff !important;
+}
+.degree.minor h3{color:#fff !important}
+.degree.minor p{color:#e5dce8 !important}
+.honors strong{color:#4d3159 !important}
+.honors span{color:#716476 !important}
+.interest-row{border-color:rgba(99,70,112,.14) !important}
+.interest-row .n{color:#997ca6 !important}
+
+/* Off the Record: dark enough to feel special, but softer than the neon version */
+.off-record{
+  background:
+    radial-gradient(circle at 84% 10%,rgba(155,108,178,.16),transparent 28%),
+    linear-gradient(145deg,#2d1d34 0%,#382441 52%,#291b30 100%) !important;
+}
+.off-top h2,
+.verdict-heading h3,
+.media-heading h3{color:#f5eef8 !important}
+.off-top p,
+.verdict-heading p,
+.media-heading p{color:#cfc2d3 !important}
+.off-label,
+.docket-eyebrow,
+.media-number{color:#c6a9d0 !important}
+
+/* docket */
+.docket-feature{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.015)),
+    linear-gradient(135deg,#6d4a7b,#5a3a67) !important;
+  border:1px solid rgba(255,255,255,.13) !important;
+  border-radius:22px !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.13),0 22px 45px rgba(20,12,24,.18) !important;
+}
+.docket-grid{background:rgba(255,255,255,.10) !important}
+.docket-grid article{
+  background:rgba(48,31,55,.55) !important;
+}
+.docket-grid article.ten{background:rgba(39,24,46,.68) !important}
+
+/* verdict cards */
+.verdict-card,
+.media-cards article,
+.tv-grid article{
+  background:rgba(49,32,57,.72) !important;
+  border-color:rgba(221,202,229,.12) !important;
+  border-radius:16px !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.05) !important;
+}
+.verdict-card:nth-child(2n),
+.media-cards article:nth-child(even){
+  background:rgba(58,38,67,.74) !important;
+}
+.verdict-card h4,
+.media-cards h4,
+.tv-grid strong{color:#f8f1fa !important}
+.verdict-top b,
+.media-cards b,
+.tv-grid b{color:#d9bce4 !important}
+.verdict-card p,
+.media-cards p,
+.tv-grid small{color:#cbbdce !important}
+.verdict-card em,
+.media-cards span{color:#c8a5d3 !important}
+
+/* games */
+.hyrule-card{
+  background:rgba(231,219,236,.90) !important;
+  border-color:rgba(101,72,114,.16) !important;
+  border-radius:18px !important;
+  color:#332638 !important;
+}
+.hyrule-card h4{color:#4b3156 !important}
+.hyrule-card p{color:#685d6c !important}
+.hyrule-score,
+.game-cards .hyrule-card span{color:#7e5c8a !important}
+
+/* contact */
+.contact{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(133,96,151,.10),transparent 28%),
+    linear-gradient(135deg,#ded1e5,#e8dfea) !important;
+  color:var(--ink) !important;
+}
+.contact h2{color:#452d50 !important}
+.contact p{color:#6d6072 !important}
+.contact-card{
+  background:linear-gradient(145deg,#593965,#452e50) !important;
+  border-color:rgba(255,255,255,.12) !important;
+  border-radius:20px !important;
+  box-shadow:inset 0 1px rgba(255,255,255,.13),0 20px 42px rgba(61,41,69,.12) !important;
+}
+.contact-email{color:#fff !important}
+.contact-links a{
+  border-radius:999px !important;
+  background:rgba(255,255,255,.055);
+}
+
+/* footer */
+footer{
+  background:#291b30 !important;
+  color:#bfaec4 !important;
+  border-top:1px solid rgba(255,255,255,.06) !important;
+}
+
+
+/* ===== V8.4 SOFT Y2K POLISH =====
+   Keeps V8.3 readable, adds a little more 2000s personality.
+*/
+
+/* subtle iridescent chrome edge */
+header,
+.hero-card,
+.profile-callout,
+.feature,
+.support-card,
+.degree,
+.early-work,
+.docket-feature,
+.verdict-card,
+.media-cards article,
+.hyrule-card,
+.contact-card{
+  position:relative;
+}
+
+.hero-card::after,
+.profile-callout::after,
+.feature::after,
+.support-card::after,
+.degree::after,
+.early-work::after,
+.docket-feature::after,
+.verdict-card::after,
+.media-cards article::after,
+.hyrule-card::after,
+.contact-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  padding:1px;
+  background:linear-gradient(135deg,
+    rgba(255,255,255,.48),
+    rgba(206,173,225,.26) 30%,
+    rgba(149,118,172,.20) 58%,
+    rgba(255,255,255,.32)
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:.55;
+}
+
+/* tiny Y2K sparkle accents */
+.hero-inner::before,
+.off-inner::before{
+  content:"✦";
+  position:absolute;
+  font-size:18px;
+  color:rgba(108,74,125,.34);
+  text-shadow:18px 12px 0 rgba(141,104,158,.18), -14px 24px 0 rgba(255,255,255,.30);
+  pointer-events:none;
+}
+.hero-inner{position:relative}
+.hero-inner::before{right:4%;top:7%}
+.off-inner{position:relative}
+.off-inner::before{right:2%;top:1%;color:rgba(222,199,232,.28)}
+
+/* give major labels a softer "interface" look */
+.kicker,
+.case-label,
+.off-label,
+.docket-eyebrow,
+.media-number,
+.sec-no{
+  letter-spacing:.18em !important;
+}
+.kicker,
+.case-label,
+.off-label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.kicker::after,
+.case-label::after,
+.off-label::after{
+  content:"";
+  width:22px;
+  height:1px;
+  background:currentColor;
+  opacity:.45;
+}
+
+/* Y2K bubble-glass buttons without getting neon */
+.btn,
+.work-btn,
+.contact-links a,
+.nav-cta{
+  position:relative;
+  overflow:hidden;
+}
+.btn::before,
+.work-btn::before,
+.contact-links a::before,
+.nav-cta::before{
+  content:"";
+  position:absolute;
+  left:8%;
+  right:8%;
+  top:2px;
+  height:42%;
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0));
+  opacity:.50;
+  pointer-events:none;
+}
+
+/* slightly more 2000s rounded-window treatment */
+.hero-card,
+.docket-feature,
+.contact-card,
+.early-work{
+  border-radius:24px !important;
+}
+.profile-callout,
+.feature,
+.support-card,
+.additional,
+.degree,
+.verdict-card,
+.media-cards article,
+.hyrule-card{
+  border-radius:18px !important;
+}
+
+/* mini "chrome" dots in the feature cards */
+.hero-card::before,
+.docket-feature::before,
+.contact-card::before{
+  content:"●  ●  ●";
+  position:absolute;
+  top:13px;
+  right:16px;
+  z-index:2;
+  font-size:7px;
+  letter-spacing:5px;
+  color:rgba(255,255,255,.42);
+  pointer-events:none;
+}
+
+/* soft purple grid in the hero only */
+.hero{
+  background:
+    linear-gradient(rgba(92,65,105,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(92,65,105,.035) 1px,transparent 1px),
+    radial-gradient(circle at 80% 14%,rgba(159,127,177,.18),transparent 25%),
+    radial-gradient(circle at 15% 78%,rgba(112,79,131,.10),transparent 28%),
+    linear-gradient(135deg,#eee7f1 0%,#e1d5e7 55%,#d8c9e0 100%) !important;
+  background-size:32px 32px,32px 32px,auto,auto,auto !important;
+}
+
+/* slightly more lilac in Off the Record without becoming neon */
+.off-record{
+  background:
+    radial-gradient(circle at 82% 9%,rgba(173,129,195,.20),transparent 26%),
+    radial-gradient(circle at 12% 74%,rgba(111,80,128,.10),transparent 28%),
+    linear-gradient(145deg,#2d1d34 0%,#3b2744 52%,#2b1d32 100%) !important;
+}
+
+/* a light pearlescent sheen on Currently on the Docket */
+.docket-feature{
+  background:
+    linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.02) 40%),
+    linear-gradient(135deg,#745281,#5b3c68) !important;
+}
+
+/* subtle hover lift feels more modern/interactive */
+@media (hover:hover){
+  .feature,
+  .support-card,
+  .degree,
+  .verdict-card,
+  .media-cards article,
+  .hyrule-card{
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .feature:hover,
+  .support-card:hover,
+  .degree:hover,
+  .verdict-card:hover,
+  .media-cards article:hover,
+  .hyrule-card:hover{
+    transform:translateY(-2px);
+    box-shadow:inset 0 1px rgba(255,255,255,.42),0 16px 34px rgba(77,54,88,.08) !important;
+  }
+}
+
+/* preserve accessibility/readability */
+@media(max-width:760px){
+  .hero-inner::before,
+  .off-inner::before{display:none}
+  .hero-card::before,
+  .docket-feature::before,
+  .contact-card::before{display:none}
+}
+
+
+/* ===== V8.5 SOFT NEON Y2K ACCENTS =====
+   Adds selective neon violet glow while keeping the page readable.
+*/
+
+/* neon accent variables */
+:root{
+  --neon-violet:#b76cff;
+  --neon-purple:#8c42d6;
+  --neon-pink:#d68cff;
+  --neon-soft:rgba(183,108,255,.22);
+}
+
+/* keep the base calm, but add a subtle purple aura */
+body{
+  background:
+    radial-gradient(circle at 14% 8%,rgba(172,118,205,.16),transparent 28%),
+    radial-gradient(circle at 86% 20%,rgba(144,87,193,.10),transparent 25%),
+    linear-gradient(180deg,#e8dfee 0%,#e2d7e8 52%,#ddd0e4 100%) !important;
+}
+
+/* navigation: faint neon active feel */
+header{
+  box-shadow:
+    0 8px 24px rgba(70,45,82,.07),
+    0 0 28px rgba(148,82,204,.05) !important;
+}
+.brand-mark{
+  color:#8f5aa7 !important;
+  text-shadow:0 0 10px rgba(183,108,255,.20);
+}
+nav a:hover{
+  box-shadow:0 0 0 1px rgba(183,108,255,.10),0 0 14px rgba(183,108,255,.08);
+}
+
+/* hero: only the accents glow, not the whole page */
+.hero{
+  background:
+    linear-gradient(rgba(92,65,105,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(92,65,105,.035) 1px,transparent 1px),
+    radial-gradient(circle at 80% 14%,rgba(183,108,255,.18),transparent 25%),
+    radial-gradient(circle at 15% 78%,rgba(123,74,163,.12),transparent 28%),
+    linear-gradient(135deg,#eee7f1 0%,#dfd2e6 55%,#d6c6df 100%) !important;
+}
+.hero:before{
+  background:linear-gradient(180deg,#9b64b6,#be7cff,#704488) !important;
+  box-shadow:0 0 14px rgba(183,108,255,.22) !important;
+}
+.kicker,
+.case-label,
+.off-label,
+.docket-eyebrow,
+.media-number{
+  color:#8e5aa4 !important;
+  text-shadow:0 0 10px rgba(183,108,255,.16);
+}
+.hero h1 em{
+  color:#6b3f79 !important;
+  text-shadow:0 0 16px rgba(183,108,255,.10) !important;
+}
+
+/* bubble buttons with a stronger Y2K neon rim */
+.btn-primary,
+.btn-email,
+.work-btn{
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.24),
+    0 8px 20px rgba(73,48,84,.12),
+    0 0 18px rgba(183,108,255,.10) !important;
+}
+.btn-primary:hover,
+.btn-email:hover,
+.work-btn:hover{
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.28),
+    0 10px 22px rgba(73,48,84,.14),
+    0 0 24px rgba(183,108,255,.20) !important;
+}
+.btn-ghost:hover,
+.contact-links a:hover,
+.nav-cta:hover{
+  border-color:rgba(183,108,255,.34) !important;
+  box-shadow:0 0 18px rgba(183,108,255,.10);
+}
+
+/* major cards: subtle lilac neon trim */
+.hero-card,
+.docket-feature,
+.contact-card,
+.early-work{
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.15),
+    0 22px 45px rgba(61,39,70,.13),
+    0 0 28px rgba(183,108,255,.06) !important;
+}
+.hero-card:hover,
+.docket-feature:hover,
+.contact-card:hover{
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.18),
+    0 24px 50px rgba(61,39,70,.14),
+    0 0 34px rgba(183,108,255,.11) !important;
+}
+
+/* stronger Y2K accent on section numbers */
+.sec-no{
+  color:#7b4b90 !important;
+  border-color:rgba(183,108,255,.20) !important;
+  background:rgba(183,108,255,.06) !important;
+  box-shadow:0 0 12px rgba(183,108,255,.06);
+}
+.sec-no:after{
+  background:linear-gradient(90deg,#8c5aa0,#bd7aff) !important;
+  box-shadow:0 0 8px rgba(183,108,255,.18);
+}
+
+/* Off the Record gets the most neon, but still restrained */
+.off-record{
+  background:
+    radial-gradient(circle at 82% 9%,rgba(183,108,255,.18),transparent 26%),
+    radial-gradient(circle at 12% 74%,rgba(125,74,158,.12),transparent 28%),
+    linear-gradient(145deg,#2d1d34 0%,#3c2845 52%,#2b1d32 100%) !important;
+}
+.docket-feature{
+  background:
+    linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.018) 40%),
+    linear-gradient(135deg,#765180,#5d3b69) !important;
+  border-color:rgba(209,164,233,.20) !important;
+}
+.docket-stamp{
+  border-color:rgba(223,184,255,.48) !important;
+  color:#f3e5ff !important;
+  text-shadow:0 0 10px rgba(183,108,255,.24);
+}
+.verdict-top b,
+.media-cards b,
+.tv-grid b{
+  color:#e0b4ef !important;
+  text-shadow:0 0 10px rgba(183,108,255,.10);
+}
+.verdict-card em,
+.media-cards span,
+.game-cards .hyrule-card span{
+  color:#cf9fdd !important;
+  text-shadow:0 0 8px rgba(183,108,255,.08);
+}
+
+/* Y2K accent line under major media headings */
+.media-heading,
+.verdict-heading{
+  position:relative;
+}
+.media-heading:after,
+.verdict-heading:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-14px;
+  width:120px;
+  height:2px;
+  background:linear-gradient(90deg,#9b64b6,#c481f2,transparent);
+  box-shadow:0 0 10px rgba(183,108,255,.14);
+}
+
+/* small hover glow on cards, not enough to strain the eyes */
+@media (hover:hover){
+  .verdict-card:hover,
+  .media-cards article:hover,
+  .hyrule-card:hover,
+  .support-card:hover,
+  .degree:hover{
+    border-color:rgba(183,108,255,.22) !important;
+    box-shadow:
+      inset 0 1px rgba(255,255,255,.38),
+      0 15px 30px rgba(77,54,88,.08),
+      0 0 18px rgba(183,108,255,.06) !important;
+  }
+}
+
 </style>
 </head>
 <body>
-<!-- BUILD: V7_V4_PURPLE_VERIFIED -->
+<!-- BUILD: V8_5_SOFT_NEON_Y2K_PREVIEW -->
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="nav-wrap">
@@ -494,7 +1222,7 @@ footer{background:#1d0d24;color:#bdaac4;border-top:1px solid #4a3152}
     </article>
 
     <article class="role">
-      <div class="role-date"><strong>2022–Present</strong>Montclair, New Jersey</div>
+      <div class="role-date"><strong>2022–May 2026</strong>Montclair, New Jersey</div>
       <div>
         <div class="org">Montclair State University · School of Communication &amp; Media</div>
         <h3>Equipment Desk / “The Cage”</h3>
